@@ -121,10 +121,3 @@ Created by: **Naufal Khalil ID**
 * 🍴 Fork
 * 💬 Feedback
 
----
-
-## 🔥 Closing
-
-Naulex Translate adalah translator modern yang cepat, ringan, dan powerful untuk kebutuhan sehari-hari.
-
----
