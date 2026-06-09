@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td>
-      <img src="./icon.png" width="120">
+      <img src="./assets/icon.png" width="120">
     </td>
     <td>
       <h2>Naulex Translate</h2>
