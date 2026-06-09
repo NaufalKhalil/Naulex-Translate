@@ -1,6 +1,18 @@
 # 🟧 Naulex Translate v2.0
 
-![Naulex Translate Icon]
+<table>
+  <tr>
+    <td>
+      <img src="./icon.png" width="120">
+    </td>
+    <td>
+      <h2>Naulex Translate</h2>
+      <p>
+        A modern desktop translator with fast performance, dark UI, and interactive features.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
