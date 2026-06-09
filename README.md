@@ -91,18 +91,13 @@ English, Indonesian, Japanese, Korean, Chinese, Arabic, German, French, Spanish,
 
 ---
 
-## ⬇️ Download
+<h2 align="left">⬇️ Download</h2>
 
-### Option 1 (Recommended)
-
-* Go to **Releases**
-* Download latest `.exe` (v2.0)
-* Run directly
-
-### Option 2
-
-* Click **Code → Download ZIP**
-* Extract & run
+<p align="left">
+  <a href="https://github.com/NaufalKhalil/Naulex-Translate/releases/latest">
+    <img src="https://img.shields.io/badge/Download-Naulex%20Translate%20v2.0-orange?style=for-the-badge&logo=windows">
+  </a>
+</p>
 
 ---
 
