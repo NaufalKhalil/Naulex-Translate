@@ -1,25 +1,16 @@
-# 🟧 Naulex Translate v2.0
-
 <table>
   <tr>
     <td>
       <img src="./assets/icon.png" width="120">
     </td>
     <td>
-      <h2>Naulex Translate</h2>
+      <h2>Naulex Translate v2.0</h2>
       <p>
         A modern desktop translator with fast performance, dark UI, and interactive features.
       </p>
     </td>
   </tr>
 </table>
-
----
-
-## 🌐 Language
-
-* 🇺🇸 [English](#-english)
-* 🇮🇩 [Indonesia](#-indonesia)
 
 ---
 
@@ -33,9 +24,7 @@
 
 ---
 
-# 🇺🇸 English
-
-## 🟧 Naulex Translate v2.0
+## <img src="./assets/icon.png" width="20"> Naulex Translate v2.0
 
 **Naulex Translate** is a modern desktop translator with a clean dark UI, fast performance, and interactive features. Designed for daily use such as learning languages, gaming, chatting, and productivity.
 
@@ -87,9 +76,7 @@ English, Indonesian, Japanese, Korean, Chinese, Arabic, German, French, Spanish,
 
 ## 🖼️ App Preview
 
-![Preview 1](./preview1.png)
-![Preview 2](./preview2.png)
-![Preview 3](./preview3.png)
+![Preview 1](./assets/images/preview1.png)
 
 ---
 
@@ -119,85 +106,9 @@ English, Indonesian, Japanese, Korean, Chinese, Arabic, German, French, Spanish,
 
 ---
 
-# 🇮🇩 Indonesia
-
-## 🟧 Naulex Translate v2.0
-
-**Naulex Translate** adalah aplikasi translator modern berbasis desktop dengan tampilan UI dark minimalis, cepat, dan interaktif.
-
----
-
-## 🚀 Versi Terbaru
-
-🔥 **Current Version: v2.0**
-
----
-
-## 🌍 Dukungan Bahasa
-
-Mendukung **100+ bahasa internasional** 🌐
-
----
-
-## ⚙️ Dibangun Dengan Apa?
-
-* Python Desktop App
-* Custom UI Dark Mode
-* Event-driven system
-* Translation engine
-
----
-
-## ✨ Fitur Utama
-
-* Multi-language support
-* UI cepat & responsif
-* Smart language selector
-* Search language
-* Favorite system ⭐
-* Terminal panel
-* Shortcut (F2)
-* UI modern
-
----
-
-## 🖼️ Tampilan Aplikasi
-
-![Preview 1](./preview1.png)
-![Preview 2](./preview2.png)
-![Preview 3](./preview3.png)
-
----
-
-## ⚙️ Cara Menggunakan
-
-1. Jalankan aplikasi
-2. Pilih bahasa
-3. Klik kiri → pilih
-4. Klik kanan → favorite ⭐
-5. Gunakan `F2`
-6. Lihat terminal panel
-
----
-
-## ⬇️ Cara Download
-
-### Opsi 1
-
-* Masuk ke **Releases**
-* Download `.exe`
-* Jalankan langsung
-
-### Opsi 2
-
-* Download ZIP
-* Extract & jalankan
-
----
-
 ## 📩 Contact
 
-Jika ada kebingungan:
+If you have any questions, just DM me on Instagram :
 
 👉 https://www.instagram.com/khalil.naufal_/
 
