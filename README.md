@@ -1,9 +1,9 @@
 <div align="center">
   <img src="./assets/icon.png" width="120" alt="Naulex Translate">
   <h1>Naulex Translate v2.0</h1>
-  <p><strong>Modern Desktop Translator for Windows</strong></p>
-  <p>Fast performance • Dark UI • Interactive features</p>
-  
+
+  <p><strong>Fast, Lightweight & Modern Desktop Translator</strong></p>
+
   [![Version](https://img.shields.io/badge/version-2.0-orange?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
   [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
   [![Language](https://img.shields.io/badge/language-Python-yellow?style=flat-square)](https://python.org)
@@ -31,33 +31,33 @@
 
 ## About
 
-**Naulex Translate** is a lightweight yet powerful desktop translator designed for seamless integration into your daily workflow. Whether you're learning languages, gaming, chatting, or working, Naulex Translate provides instant translation with a sleek dark UI and responsive performance.
+**Naulex Translate** is a fast and lightweight desktop translator built for real-time use.
+
+Designed for **gamers, learners, and everyday users**, it delivers instant translation with a clean dark interface and minimal friction.
+
+No clutter. No delay. Just translate.
 
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🌐 **100+ Languages** | Support for major international languages |
-| ⚡ **Fast & Responsive** | Instant translation with modern UI |
-| 🎯 **Smart Selector** | Intelligent language detection and selection |
-| 🔍 **Search** | Quick language search functionality |
-| ⭐ **Favorites** | Save and prioritize your most-used languages |
-| 📋 **Terminal Log** | Built-in terminal panel for monitoring activity |
-| ⌨️ **Shortcuts** | F2 hotkey support for quick access |
-| 🌙 **Dark UI** | Professional dark theme for reduced eye strain |
+- 🌐 **100+ Languages** — Covers major global languages  
+- ⚡ **Fast & Responsive** — Instant translation, no lag  
+- 🎯 **Smart Selector** — Easy and intuitive language picking  
+- 🔍 **Quick Search** — Find languages instantly  
+- ⭐ **Favorites System** — Pin your most-used languages  
+- 📋 **Terminal Log** — Monitor activity in real-time  
+- ⌨️ **Hotkeys (F2)** — Faster workflow  
+- 🌙 **Dark UI** — Clean and eye-friendly design  
 
 ---
 
 ## 🚀 What's New (v2.0)
 
-### Major Improvements
-
-- **Modern & Responsive UI** — Redesigned interface with better usability
-- **Favorite Language System** — Mark languages for quick access
-- **Interactive Terminal Log** — Real-time monitoring of translation activity
-- **Faster Workflow** — Optimized shortcuts and performance
+- ✨ Completely redesigned **modern UI**
+- ⭐ Added **Favorite Language System**
+- 📋 New **Interactive Terminal Log**
+- ⚡ Improved performance & responsiveness
 
 ---
 
@@ -72,15 +72,16 @@ English, Indonesian, Japanese, Korean, Chinese (Simplified & Traditional), Arabi
 ## 📥 Installation
 
 ### Prerequisites
-- Windows 10 or higher
+- Windows 10 or higher  
 - Python 3.8+ (for development)
 
 ### Quick Start
 
-1. Download the latest release from [Releases](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
-2. Extract the `.zip` file to your desired location
-3. Run `Naulex-Translate.exe`
-4. Enjoy translating!
+1. Download the latest release from  
+   https://github.com/NaufalKhalil/Naulex-Translate/releases/latest  
+2. Extract the `.zip` file  
+3. Run `Naulex-Translate.exe`  
+4. Start translating 🚀  
 
 ---
 
@@ -90,80 +91,79 @@ English, Indonesian, Japanese, Korean, Chinese (Simplified & Traditional), Arabi
 Open the `.exe` file to start Naulex Translate.
 
 ### Select Target Language
-1. Choose your desired target language from the language list
-2. **Left Click** to select as your active target language
-3. The language is applied instantly
+- Left click → Set as active language  
+- Language applies instantly  
 
 ### Start Translating
-- Open any application (chat, browser, notes, games)
-- Type normally — Naulex Translate processes your input
-- Translations appear instantly based on your selected language
+- Open any app (chat, browser, game, etc.)  
+- Type normally  
+- Translation appears instantly  
 
-### Keyboard Shortcuts
-- **F2** — Quick access/trigger translation features
+### Keyboard Shortcut
+- **F2** → Quick trigger  
 
 ### Monitor Activity
-- Check the built-in terminal/log panel to see:
-  - Translation activity logs
-  - System responses
-  - Debug information
+Use the built-in terminal panel to view:
+- Translation logs  
+- System responses  
+- Debug info  
 
 ---
 
 ## ⭐ Favorites System
 
-### How to Use
+Make your workflow faster and smarter:
 
-| Action | Result |
-|--------|--------|
-| **Right-click** on any language | Add/remove from favorites |
-| **View favorites** | Pinned languages appear at the top |
-| **Quick access** | No need to search — favorites load instantly |
+- **Right-click any language** → Add/remove favorite ⭐  
+- **Pinned languages** appear at the top  
+- **No more searching** — favorites always ready  
 
-### Benefits
-- ⚡ Faster workflow for frequently used languages
-- 🎯 Less searching, more productivity
-- 📌 Favorites stay ready for instant selection
+> Built for speed. Designed for convenience.
 
 ---
 
 ## ⚙️ Built With
 
-| Technology | Purpose |
-|------------|---------|
-| **Python** | Core desktop application |
-| **PyWebView** | Modern UI framework |
-| **Custom Dark UI** | Professional visual design |
-| **Event-driven Architecture** | Responsive performance |
-| **Translation API/Engine** | Fast, accurate translations |
+- **Python** — Core application  
+- **PyWebView** — UI framework  
+- **Custom Dark UI** — Visual design  
+- **Event-driven system** — Responsive performance  
+- **Translation Engine/API** — Fast & accurate results  
 
 ---
 
 ## 📥 Download
 
 <div align="center">
-  <a href="https://github.com/NaufalKhalil/Naulex-Translate/releases/latest">
-    <img src="https://img.shields.io/badge/📥_Download_Latest_Release-orange?style=for-the-badge" alt="Download">
-  </a>
+
+### 🚀 Get the Latest Version
+
+<a href="https://github.com/NaufalKhalil/Naulex-Translate/releases/latest">
+  <img src="https://img.shields.io/badge/⬇️_Download_Now-orange?style=for-the-badge" />
+</a>
+
+<p><i>Simple. Fast. Ready to use.</i></p>
+
 </div>
 
 ---
 
 ## 💬 Support
 
-Help us improve Naulex Translate:
+If you like this project:
 
-- ⭐ **Star** this repository
-- 🍴 **Fork** to contribute
-- 💭 **Share feedback** via issues
+- ⭐ Star the repository  
+- 🍴 Fork and contribute  
+- 🐞 Report bugs or suggest features  
+
+Your support helps this project grow 🚀  
 
 ---
 
 ## 📧 Contact
 
-Have questions or suggestions? Reach out on Instagram:
-
-👉 **[@khalil.naufal_](https://www.instagram.com/khalil.naufal_/)**
+Instagram:  
+👉 https://www.instagram.com/khalil.naufal_/
 
 ---
 
@@ -175,9 +175,9 @@ Have questions or suggestions? Reach out on Instagram:
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — free to use, modify, and distribute.
+This project is licensed under the **MIT License**.
 
-See the [LICENSE](./LICENSE) file for full details.
+See the [LICENSE](./LICENSE) file for details.
 
 ---
 
