@@ -210,7 +210,7 @@ Make your workflow faster and smarter:
 
 ### 🚀 Get the Latest Version
 
-[![Download](https://img.shields.io/badge/Download-Naulex%20Translate%20v2.0-orange?style=for-the-badge&logo=windows)](https://github.com/USERNAME/REPO/releases/latest)
+[![Download](https://img.shields.io/badge/Download-Naulex%20Translate%20v2.0-orange?style=for-the-badge&logo=windows)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
 
 ---
 
