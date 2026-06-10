@@ -1,15 +1,16 @@
 <table>
-<tr>
-<td width="120">
-<img src="./assets/icon.png" width="100" alt="Naulex Translate">
-</td>
-<td>
-
-# Naulex Translate v2.0
-
-**Fast, Lightweight & Modern Desktop Translator**  
-
-Fast performance • Dark UI • Interactive features
+  <tr>
+    <td width="" align="center">
+      <img src="https://github.com/user-attachments/assets/f4796c01-af2d-4752-b343-35a46caf05dd" width="120">
+    </td>
+    <td>
+      <h1> Naulex Translate v2.0</h1>
+      <p>
+        A modern desktop translator with a minimal dark UI, fast performance, and interactive features.
+      </p>
+    </td>
+  </tr>
+</table>
 
 [![Version](https://img.shields.io/badge/version-2.0-orange?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
@@ -157,9 +158,7 @@ Make your workflow faster and smarter:
 
 ### 🚀 Get the Latest Version
 
-https://github.com/NaufalKhalil/Naulex-Translate/releases/latest  
-
-Simple. Fast. Ready to use.
+[![Download](https://img.shields.io/badge/Download-Naulex%20Translate%20v2.0-orange?style=for-the-badge&logo=windows)](https://github.com/USERNAME/REPO/releases/latest)
 
 ---
 
@@ -193,7 +192,3 @@ Created by: **Naufal Khalil ID**
 This project is licensed under the **MIT License**.
 
 See the [LICENSE](./LICENSE) file for details.
-
----
-
-[⬆ Back to Top](#naulex-translate-v20)
