@@ -82,12 +82,49 @@ English, Indonesian, Japanese, Korean, Chinese, Arabic, German, French, Spanish,
 
 ## ⚙️ How to Use
 
-1. Run **Naulex Translate**
-2. Select target language
-3. Left click → select language
-4. Right click → add to favorite ⭐
-5. Press `F2` for shortcut
-6. Monitor activity in terminal panel
+Follow these steps to start using **Naulex Translate**:
+
+1. **Launch the Application**
+   Open *Naulex Translate* by running the `.exe` file.
+
+2. **Select Target Language**
+   Choose the language you want to translate into from the available language list.
+
+3. **Choose a Language**
+
+   * **Left Click** on a language → to select it as your active target language
+   * The selected language will be applied instantly
+
+4. **Start Typing Anywhere**
+   Open any application or game (e.g. chat, browser, or notes), then:
+
+   * Type any text normally
+   * Naulex Translate will process your input based on the selected language
+
+5. **Use Shortcut (F2)**
+   Press `F2` to quickly trigger or interact with translation features (depending on your setup)
+
+6. **Monitor Terminal Panel**
+   Check the built-in terminal/log panel to see:
+
+   * Translation activity
+   * System responses
+   * Debug or process information
+
+---
+
+## ⭐ Favorite Language Feature
+
+Manage your frequently used languages easily:
+
+* **Add to Favorite**
+  Right click on any language → it will be added to your favorites ⭐
+
+* **Quick Access**
+  Favorite languages are prioritized for faster selection
+
+* **Efficient Workflow**
+  No need to search repeatedly — your most-used languages stay ready
 
 ---
 
