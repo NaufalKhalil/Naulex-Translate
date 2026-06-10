@@ -1,31 +1,31 @@
-<div align="center">
-  <img src="./assets/icon.png" width="120" alt="Naulex Translate">
-  <h1>Naulex Translate v2.0</h1>
+<img src="./assets/icon.png" width="120" alt="Naulex Translate">
 
-  <p><strong>Fast, Lightweight & Modern Desktop Translator</strong></p>
+# Naulex Translate v2.0
 
-  [![Version](https://img.shields.io/badge/version-2.0-orange?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
-  [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
-  [![Language](https://img.shields.io/badge/language-Python-yellow?style=flat-square)](https://python.org)
-  [![Status](https://img.shields.io/badge/status-Active-success?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
-  [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE)
-</div>
+**Fast, Lightweight & Modern Desktop Translator**
+
+[![Version](https://img.shields.io/badge/version-2.0-orange?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
+[![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
+[![Language](https://img.shields.io/badge/language-Python-yellow?style=flat-square)](https://python.org)
+[![Status](https://img.shields.io/badge/status-Active-success?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE)
 
 ---
 
 ## 📖 Table of Contents
+
 - [About](#about)
-- [Features](#features)
-- [What's New](#whats-new)
-- [Supported Languages](#supported-languages)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Favorites System](#favorites-system)
-- [Built With](#built-with)
-- [Download](#download)
-- [Support](#support)
-- [Contact](#contact)
-- [License](#license)
+- [Features](#-features)
+- [What's New](#-whats-new-v20)
+- [Supported Languages](#-supported-languages)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Favorites System](#-favorites-system)
+- [Built With](#️-built-with)
+- [Download](#-download)
+- [Support](#-support)
+- [Contact](#-contact)
+- [License](#-license)
 
 ---
 
@@ -72,15 +72,19 @@ English, Indonesian, Japanese, Korean, Chinese (Simplified & Traditional), Arabi
 ## 📥 Installation
 
 ### Prerequisites
+
 - Windows 10 or higher  
 - Python 3.8+ (for development)
 
 ### Quick Start
 
-1. Download the latest release from  
+1. Download the latest release:  
    https://github.com/NaufalKhalil/Naulex-Translate/releases/latest  
+
 2. Extract the `.zip` file  
+
 3. Run `Naulex-Translate.exe`  
+
 4. Start translating 🚀  
 
 ---
@@ -88,22 +92,28 @@ English, Indonesian, Japanese, Korean, Chinese (Simplified & Traditional), Arabi
 ## 🎯 Usage
 
 ### Launch the Application
+
 Open the `.exe` file to start Naulex Translate.
 
 ### Select Target Language
+
 - Left click → Set as active language  
 - Language applies instantly  
 
 ### Start Translating
+
 - Open any app (chat, browser, game, etc.)  
 - Type normally  
 - Translation appears instantly  
 
 ### Keyboard Shortcut
+
 - **F2** → Quick trigger  
 
 ### Monitor Activity
+
 Use the built-in terminal panel to view:
+
 - Translation logs  
 - System responses  
 - Debug info  
@@ -134,17 +144,11 @@ Make your workflow faster and smarter:
 
 ## 📥 Download
 
-<div align="center">
-
 ### 🚀 Get the Latest Version
 
-<a href="https://github.com/NaufalKhalil/Naulex-Translate/releases/latest">
-  <img src="https://img.shields.io/badge/⬇️_Download_Now-orange?style=for-the-badge" />
-</a>
+https://github.com/NaufalKhalil/Naulex-Translate/releases/latest  
 
-<p><i>Simple. Fast. Ready to use.</i></p>
-
-</div>
+Simple. Fast. Ready to use.
 
 ---
 
@@ -163,13 +167,13 @@ Your support helps this project grow 🚀
 ## 📧 Contact
 
 Instagram:  
-👉 https://www.instagram.com/khalil.naufal_/
+https://www.instagram.com/khalil.naufal_/  
 
 ---
 
 ## 👨‍💻 Developer
 
-**Created by:** Naufal Khalil ID
+Created by: **Naufal Khalil ID**
 
 ---
 
@@ -181,7 +185,4 @@ See the [LICENSE](./LICENSE) file for details.
 
 ---
 
-<div align="center">
-  <p>Made with ❤️ by <a href="https://github.com/NaufalKhalil">Naufal Khalil</a></p>
-  <p><a href="#-table-of-contents">Back to Top ⬆️</a></p>
-</div>
+[⬆ Back to Top](#naulex-translate-v20)
