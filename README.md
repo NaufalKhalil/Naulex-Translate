@@ -81,6 +81,55 @@ English, Indonesian, Japanese, Korean, Chinese (Simplified & Traditional), Arabi
 
 ---
 
+## 🎮 Support Apps & Games
+
+💬 Chat & Communication
+Naulex Translate can be used for various needs, including:
+- WhatsApp Web
+- Discord
+- Telegram
+- Line
+- and more apps
+
+🎮 Gaming
+Suitable for translating while playing games such as:
+- Minecraft
+- Genshin Impact
+- Roblox
+- Valorant
+- Mobile games (via emulator)
+- and more games
+
+---
+
+## 🆚 Comparison
+
+| Feature                     | Naulex Translate | Other Translators |
+|----------------------------|------------------|-------------------|
+| 🎨 Modern UI               | ✅ Yes           | ❌ No             |
+| ⭐ Favorite Language        | ✅ Yes           | ❌ No             |
+| 📋 Terminal Log            | ✅ Yes           | ❌ No             |
+| 🖱️ Right-click Interaction | ✅ Yes           | ❌ No             |
+| ⚡ Lightweight             | ✅ Yes           | ⚠️ Depends        |
+| 🧑‍💻 Developer-style UI     | ✅ Yes           | ❌ No             |
+
+---
+
+## 🖼️ Preview
+
+<img src="./assets/images/preview1.png" width="">
+
+---
+
+## ⚙️ What's it built with?
+
+- Python (Desktop App)
+- Custom UI (Dark Theme)
+- Event-driven system
+- Translation engine (API / local)
+
+---
+
 ## 📥 Installation
 
 ### Prerequisites
@@ -176,8 +225,8 @@ Your support helps this project grow 🚀
 
 ## 📧 Contact
 
-Instagram:  
-https://www.instagram.com/khalil.naufal_/  
+If there is any confusion/bug/suggestion, dm me:
+- Instagram: https://www.instagram.com/khalil.naufal_/  
 
 ---
 
