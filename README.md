@@ -152,6 +152,14 @@ Created by: **Naufal Khalil ID**
 
 ---
 
+## 📄 License
+
+This project is licensed under the MIT License — free to use, modify, and distribute.
+
+See the [LICENSE](./LICENSE) file for details.
+
+---
+
 ## ⭐ Support
 
 * ⭐ Star repo
