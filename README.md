@@ -1,14 +1,25 @@
-<img src="./assets/icon.png" width="120" alt="Naulex Translate">
+<table>
+<tr>
+<td width="120">
+<img src="./assets/icon.png" width="100" alt="Naulex Translate">
+</td>
+<td>
 
 # Naulex Translate v2.0
 
-**Fast, Lightweight & Modern Desktop Translator**
+**Fast, Lightweight & Modern Desktop Translator**  
+
+Fast performance • Dark UI • Interactive features
 
 [![Version](https://img.shields.io/badge/version-2.0-orange?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
 [![Language](https://img.shields.io/badge/language-Python-yellow?style=flat-square)](https://python.org)
 [![Status](https://img.shields.io/badge/status-Active-success?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE)
+
+</td>
+</tr>
+</table>
 
 ---
 
