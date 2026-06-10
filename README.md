@@ -115,16 +115,18 @@ Follow these steps to start using **Naulex Translate**:
 
 ## ⭐ Favorite Language Feature
 
+<img src="./assets/images/preview_favorite.png" width="250px" align="right">
+
 Manage your frequently used languages easily:
 
-* **Add to Favorite**
-  Right click on any language → it will be added to your favorites ⭐
+- **Add to Favorite**  
+  Right click on any language → it will be added to your favorites ⭐  
 
-* **Quick Access**
-  Favorite languages are prioritized for faster selection
+- **Quick Access**  
+  Favorite languages are prioritized for faster selection  
 
-* **Efficient Workflow**
-  No need to search repeatedly — your most-used languages stay ready
+- **Efficient Workflow**  
+  No need to search repeatedly — your most-used languages stay ready  
 
 ---
 
