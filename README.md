@@ -1,10 +1,10 @@
 <table>
   <tr>
-    <td width="" align="center">
-      <img src="https://github.com/user-attachments/assets/f4796c01-af2d-4752-b343-35a46caf05dd" width="120">
+    <td width="" align="left">
+      <img src="./data/design/icon apps/icon.svg" width="120">
     </td>
     <td>
-      <h1> Naulex Translate v2.0</h1>
+      <h1>Naulex Translate v1.0</h1>
       <p>
         A modern desktop translator with a minimal dark UI, fast performance, and interactive features.
       </p>
@@ -12,7 +12,7 @@
   </tr>
 </table>
 
-[![Version](https://img.shields.io/badge/version-2.0-orange?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
+[![Version](https://img.shields.io/badge/version-1.0-orange?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
 [![Language](https://img.shields.io/badge/language-Python-yellow?style=flat-square)](https://python.org)
 [![Status](https://img.shields.io/badge/status-Active-success?style=flat-square)](https://github.com/NaufalKhalil/Naulex-Translate)
@@ -67,7 +67,7 @@ No clutter. No delay. Just translate.
 
 ---
 
-## 🚀 What's New (v2.0)
+## 🚀 What's New (v1.0)
 
 - ✨ Completely redesigned **modern UI**
 - ⭐ Added **Favorite Language System**
@@ -210,7 +210,7 @@ Make your workflow faster and smarter:
 
 ### 🚀 Get the Latest Version
 
-[![Download](https://img.shields.io/badge/Download-Naulex%20Translate%20v2.0-orange?style=for-the-badge&logo=windows)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
+[![Download](https://img.shields.io/badge/Download-Naulex%20Translate%20v1.0-orange?style=for-the-badge&logo=windows)](https://github.com/NaufalKhalil/Naulex-Translate/releases/latest)
 
 ---
 
