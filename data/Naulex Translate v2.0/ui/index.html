@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naulex Translate</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════════════ HEADER ════════════════════════ -->
+<header id="header">
+  <div class="header-left">
+    <img src="assets/icon.png" id="header-icon" alt="icon"/>
+    <span class="header-title">Naulex<span class="accent">Translate</span></span>
+    <span class="header-version">v1.0</span>
+  </div>
+  <div class="header-right">
+  </div>
+</header>
+
+<!-- ═══════════════════ MAIN LAYOUT ═══════════════════ -->
+<div class="layout">
+
+  <!-- ── LEFT PANEL: Language Selector ─────────────── -->
+  <aside class="panel-left" id="panelLeft">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <button class="pill-btn active" id="btnAll"       onclick="setFilter('all')">All</button>
+      <button class="pill-btn"        id="btnFav"       onclick="setFilter('favorite')">★ Fav</button>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input type="text" id="searchInput" class="search-input"
+               placeholder="Search language…" oninput="refreshGrid()"/>
+      </div>
+    </div>
+
+    <!-- Language Grid -->
+    <div class="lang-scroll" id="langScroll">
+      <div class="lang-grid" id="langGrid">
+        <!-- buttons injected by JS -->
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ── RESIZE HANDLE ─────────────────────────────── -->
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <!-- ── RIGHT PANEL: Terminal + Controls ─────────── -->
+  <section class="panel-right" id="panelRight">
+
+    <div class="panel-right-inner">
+
+      <!-- Terminal header -->
+      <div class="term-header">
+        <span class="term-title"><span class="term-dot"></span>Terminal</span>
+        <button class="clear-btn" onclick="clearTerminal()">clear</button>
+      </div>
+
+      <!-- Terminal body -->
+      <div class="terminal" id="terminal">
+        <div id="termLines"></div>
+        <div class="term-cursor"></div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="bottom-bar">
+        <div class="status-wrap">
+          <span class="status-label">Target :</span>
+          <span class="status-lang" id="statusLang">English</span>
+        </div>
+        <button class="shortcut-btn" id="shortcutBtn" onclick="toggleShortcutPicker()">F2</button>
+      </div>
+
+    </div>
+
+    <!-- Shortcut Picker (popup) -->
+    <div class="shortcut-popup hidden" id="shortcutPopup">
+      <div class="popup-header">Hotkey</div>
+      <div class="popup-list" id="shortcutList"></div>
+    </div>
+
+  </section>
+</div>
+
+<!-- ═══════════════════ TOAST NOTIFICATION ════════════ -->
+<div class="toast hidden" id="toast"></div>
+
+<!-- ═══════════════════ CONTEXT MENU ══════════════════ -->
+<div class="ctx-menu hidden" id="ctxMenu">
+  <button id="ctxFavBtn" onclick="ctxToggleFav()"></button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
