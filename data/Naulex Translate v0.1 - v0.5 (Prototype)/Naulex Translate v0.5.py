@@ -37,7 +37,6 @@ import customtkinter as ctk
 import keyboard
 import pyperclip
 from PIL import Image
-# FIX #3: Import di level modul, bukan di dalam fungsi
 from deep_translator import GoogleTranslator
 
 # =========================
@@ -89,9 +88,8 @@ STATUS_PY       = (2, 6)
 GRID_COLS       = [(300, 2), (500, 2), (700, 3)]
 GRID_COLS_DEF   = 4
 
-# v1.4: Batas maksimum baris log terminal sebelum auto-truncate
 LOG_MAX_LINES   = 500
-LOG_TRIM_TO     = 350   # Potong ke jumlah ini saat batas tercapai
+LOG_TRIM_TO     = 350
 
 C_BG            = "#0d0d0d"
 C_PANEL         = "#111111"
@@ -116,12 +114,11 @@ C_ERROR         = "#ef4444"
 FAVORITES_FILE  = "favorites.json"
 CONFIG_FILE     = "naulex_config.json"
 STATS_FILE      = "naulex_stats.json"
-ICON_APP        = "icons/Naulex.ico"
-ICON_TRANSLATE  = "icons/translate_icon.png"
-ICON_SEARCH     = "icons/search_icon.png"
-ICON_TERMINAL   = "icons/terminal_icon.png"
+ICON_APP        = "assets/Naulex.ico"
+ICON_TRANSLATE  = "assets/translate_icon.png"
+ICON_SEARCH     = "assets/search_icon.png"
+ICON_TERMINAL   = "assets/terminal_icon.png"
 
-# v1.4: Set True untuk mengaktifkan profiling execution time di console
 PERF_PROFILE    = False
 
 SHORTCUT_OPTIONS = [
@@ -219,12 +216,11 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
-# v1.4: Profiling helper — aktif hanya jika PERF_PROFILE = True
 import contextlib
 
 @contextlib.contextmanager
 def perf_timer(label):
-    """Context manager untuk mengukur execution time suatu blok kode."""
+
     if not PERF_PROFILE:
         yield
         return
@@ -251,18 +247,17 @@ selected_lang   = LANGUAGES.get(config.get("language", "English"), "en")
 selected_lang_name = config.get("language", "English")
 current_filter  = "all"
 current_menu    = None
-current_shortcut_popup = None   # FIX #4: state untuk popup shortcut
-buttons         = {}            # name -> CTkButton
+current_shortcut_popup = None  
+buttons         = {}        
 _resize_after   = [None]
 _last_col_count = [-1]
 current_shortcut = config.get("shortcut", "F2")
 _notif_after    = [None]
-_shortcut_popup_close_after = [None]  # FIX #6: timer auto-close popup
-_log_line_count = [0]                 # v1.4: counter baris log terminal
+_shortcut_popup_close_after = [None] 
+_log_line_count = [0]               
 
-# FIX #1: Cache state tombol terakhir untuk skip configure() yang tidak perlu
-_btn_state_cache = {}  # name -> (text, fg_color, text_color, border_width, is_visible)
-_btn_grid_cache  = {}  # name -> (row, col) | None — skip grid() jika posisi tidak berubah
+_btn_state_cache = {}  
+_btn_grid_cache  = {} 
 
 def _fix_today_stats():
     today = str(date.today())
@@ -305,8 +300,6 @@ except Exception:
 
 # =========================
 # TERMINAL LOG
-# v1.4: Auto-truncate log saat melebihi LOG_MAX_LINES
-#        → cegah memory leak & perlambatan insert seiring waktu
 # =========================
 
 def log(msg):
@@ -314,9 +307,8 @@ def log(msg):
     terminal.insert("end", msg + "\n")
     _log_line_count[0] += 1
 
-    # Truncate jika sudah melebihi batas
     if _log_line_count[0] >= LOG_MAX_LINES:
-        # Hitung jumlah baris yang harus dihapus
+
         lines_to_delete = _log_line_count[0] - LOG_TRIM_TO
         terminal.delete("1.0", f"{lines_to_delete + 1}.0")
         _log_line_count[0] = LOG_TRIM_TO
@@ -350,13 +342,11 @@ def select_language(name):
     selected_lang_name = name
     config["language"] = name
 
-    # PERF: Hanya configure 2 tombol (lama & baru), bukan semua 80+ tombol
     if prev_name and prev_name != name and prev_name in buttons:
         buttons[prev_name].configure(
             fg_color=C_BTN, text_color=C_TEXT,
             border_color=C_BTN_BORDER, border_width=1,
         )
-        # Reset cache supaya refresh_grid tidak skip tombol lama
         _btn_state_cache.pop(prev_name, None)
 
     if name in buttons:
@@ -423,25 +413,22 @@ root.bind_all("<Button-1>", lambda e: root.after(10, close_current_menu))
 
 # =========================
 # TRANSLATE
-# FIX #3: Kurangi sleep, pindahkan import ke level modul
 # =========================
 
 def do_translate():
     try:
         keyboard.press_and_release("ctrl+a")
-        time.sleep(0.05)   # dikurangi dari 0.08
+        time.sleep(0.05)
         keyboard.press_and_release("ctrl+c")
-        time.sleep(0.08)   # dikurangi dari 0.12
+        time.sleep(0.08) 
 
         text = pyperclip.paste()
         if not text.strip():
             return
-
-        # GoogleTranslator sudah diimport di atas — tidak ada overhead import di sini
+        
         translated = GoogleTranslator(source="auto", target=selected_lang).translate(text)
 
         pyperclip.copy(translated)
-        # FIX #3: Hapus sleep sebelum paste — tidak diperlukan
         keyboard.press_and_release("ctrl+v")
 
         code = selected_lang.upper().split("-")[0]
@@ -466,15 +453,12 @@ def do_translate():
 
 # =========================
 # HOTKEY THREAD
-# FIX #2: Ganti polling loop dengan keyboard.add_hotkey + keyboard.wait
-#         → 0% CPU saat idle
 # =========================
 
-_hotkey_registered = [None]  # menyimpan nama shortcut yang sedang terdaftar
+_hotkey_registered = [None]
 
 def _register_hotkey(shortcut):
     """Daftar ulang hotkey. Dipanggil saat startup dan saat shortcut diganti."""
-    # Hapus hotkey lama jika ada
     if _hotkey_registered[0]:
         try:
             keyboard.remove_hotkey(_hotkey_registered[0])
@@ -492,18 +476,16 @@ def _register_hotkey(shortcut):
 
 def hotkey_loop():
     time.sleep(0.4)
-    log("[INFO] Naulex Translate v1.4")
+    log("[INFO] Naulex Translate v0.5")
     log("[INFO] Created by Naufal Khalil 🌍")
     log(f"[INFO] Shortcut active: {current_shortcut}")
     log("[INFO] Right-click a language to favorite it")
     log("")
     _register_hotkey(current_shortcut)
-    # keyboard.wait() memblokir thread ini tanpa polling — CPU idle = 0%
     keyboard.wait()
 
 # =========================
 # RESPONSIVE GRID
-# FIX #1: Skip configure() dan grid() jika state tombol tidak berubah
 # =========================
 
 def get_column_count():
@@ -531,16 +513,13 @@ def _refresh_grid_inner():
         for c in range(cols):
             lang_frame.grid_columnconfigure(c, weight=1)
         _last_col_count[0] = cols
-        # Kolom berubah → reset posisi cache agar semua tombol di-reposition
         _btn_grid_cache.clear()
 
     ordered = get_sorted_language_names()
     row = col = 0
 
-    # v1.4: Kumpulkan operasi grid dalam batch — update sekaligus di akhir
-    #        Ini mengurangi jumlah geometry manager calls per refresh.
-    grid_updates   = []   # list of (btn, row, col) yang perlu dipindah
-    remove_updates = []   # list of btn yang perlu di-hide
+    grid_updates   = [] 
+    remove_updates = []  
 
     for name in ordered:
         btn = buttons[name]
@@ -557,7 +536,6 @@ def _refresh_grid_inner():
         new_tc    = C_BTN_SEL_TXT if is_selected else C_TEXT
         new_bw    = 0 if is_selected else 1
 
-        # PERF: Hanya panggil configure() jika style benar-benar berubah
         cache_key = (label, new_fg, new_tc, new_bw, show)
         if _btn_state_cache.get(name) != cache_key:
             btn.configure(
@@ -571,7 +549,7 @@ def _refresh_grid_inner():
 
         if show:
             new_pos = (row, col)
-            # PERF: Hanya panggil grid() jika posisi berubah
+
             if _btn_grid_cache.get(name) != new_pos:
                 grid_updates.append((btn, row, col))
                 _btn_grid_cache[name] = new_pos
@@ -584,7 +562,6 @@ def _refresh_grid_inner():
                 remove_updates.append(btn)
                 _btn_grid_cache[name] = None
 
-    # v1.4: Eksekusi semua perubahan grid sekaligus (batch update)
     for btn, r, c in grid_updates:
         btn.grid(row=r, column=c,
                  padx=LANG_PAD_X, pady=LANG_PAD_Y, sticky="ew")
@@ -603,75 +580,60 @@ def set_filter(mode):
     refresh_grid()
 
 # =========================
-# RESIZE — Freeze UI selama drag, update sekali saat drag berhenti
-# v1.5: Strategi baru: debounce panjang (400ms) tanpa threshold.
-#        Selama user masih mendrag, timer terus di-cancel & di-reset.
-#        refresh_grid() HANYA dipanggil sekali, yaitu 400ms setelah drag benar-benar berhenti.
-#        Tidak ada layout recalculation sama sekali selama window sedang di-resize.
+# RESIZE
 # =========================
 
-_RESIZE_SETTLE  = 2000   # ms setelah drag berhenti baru UI di-update
+_RESIZE_SETTLE  = 2000
 _last_root_width  = [-1]
 _last_root_height = [-1]
 
 def on_resize(event):
-    # PERF: <Configure> terpicu untuk SETIAP widget anak di customtkinter.
-    # Filter ketat hanya ke root window.
+
     if event.widget is not root:
         return
 
-    # Jika ukuran sama persis (mis. window move tanpa resize), abaikan
     if event.width == _last_root_width[0] and event.height == _last_root_height[0]:
         return
     _last_root_width[0]  = event.width
     _last_root_height[0] = event.height
 
-    # Cancel timer sebelumnya — selama drag, ini terus di-reset
     if _resize_after[0]:
         root.after_cancel(_resize_after[0])
 
-    # Jadwalkan update HANYA setelah drag berhenti selama RESIZE_SETTLE ms
     _resize_after[0] = root.after(_RESIZE_SETTLE, _on_resize_settled)
 
 def _on_resize_settled():
     """Dipanggil sekali saja, setelah window selesai di-resize."""
     _resize_after[0] = None
     with perf_timer("on_resize_settled → refresh_grid"):
-        # Reset cache posisi supaya tombol di-reflow sesuai ukuran baru
+
         _last_col_count[0] = -1
         _btn_grid_cache.clear()
         refresh_grid()
 
 # =========================
 # SHORTCUT PICKER (POPUP KONTEKSTUAL)
-# FIX #4: Ganti CTkToplevel dengan popup overrideredirect di dekat tombol
-# FIX #5: Shortcut aktif menggunakan style selected yang sama dengan bahasa
-# FIX #6: Popup tetap tampil 3 detik setelah memilih, baru tutup otomatis
 # =========================
 
 def show_shortcut_picker():
     global current_shortcut_popup
 
-    # Tutup popup lama jika masih terbuka
     if current_shortcut_popup and current_shortcut_popup.winfo_exists():
         current_shortcut_popup.destroy()
         current_shortcut_popup = None
-        return  # toggle: klik lagi = tutup
-
-    # Hitung posisi popup relatif ke shortcut_btn
+        return
+    
     btn_x = shortcut_btn.winfo_rootx()
     btn_y = shortcut_btn.winfo_rooty()
     btn_h = shortcut_btn.winfo_height()
 
     popup_w = 180
-    # Hitung tinggi: setiap item ~36px + header ~30px
     popup_h = min(len(SHORTCUT_OPTIONS) * 36 + 30, 420)
 
-    # Posisikan di atas tombol agar tidak keluar layar
     px = btn_x - popup_w + shortcut_btn.winfo_width()
     py = btn_y - popup_h - 4
 
-    # Jangan keluar batas atas layar
+
     if py < 0:
         py = btn_y + btn_h + 4
 
@@ -682,12 +644,10 @@ def show_shortcut_picker():
     popup.geometry(f"{popup_w}x{popup_h}+{px}+{py}")
     popup.configure(fg_color=C_PANEL)
 
-    # Tambah border tipis via inner frame
     inner = ctk.CTkFrame(popup, fg_color=C_PANEL, corner_radius=8,
                          border_width=1, border_color=C_BTN_BORDER)
     inner.pack(fill="both", expand=True, padx=1, pady=1)
 
-    # Label header kecil
     ctk.CTkLabel(
         inner, text="Shortcut",
         font=("Consolas", 10),
@@ -702,7 +662,6 @@ def show_shortcut_picker():
     )
     scroll.pack(fill="both", expand=True, padx=6, pady=(0, 6))
 
-    # Simpan referensi semua tombol di popup agar bisa diupdate visual
     sc_buttons = {}
 
     def pick(s):
@@ -715,10 +674,8 @@ def show_shortcut_picker():
         log(f"[INFO] Shortcut changed: {old} → {s}")
         show_notif(f"Shortcut: {s}", C_SUCCESS)
 
-        # FIX #2: Daftarkan ulang hotkey baru tanpa restart thread
         threading.Thread(target=lambda: _register_hotkey(s), daemon=True).start()
 
-        # FIX #5: Update visual semua tombol di popup — aktif = style selected
         for sc_key, sc_btn in sc_buttons.items():
             is_now_active = (sc_key == s)
             sc_btn.configure(
@@ -728,7 +685,6 @@ def show_shortcut_picker():
                 border_width=0 if is_now_active else 1,
             )
 
-        # FIX #6: Batalkan timer close sebelumnya, tutup otomatis setelah 3 detik
         if _shortcut_popup_close_after[0]:
             root.after_cancel(_shortcut_popup_close_after[0])
         _shortcut_popup_close_after[0] = root.after(3000, _close_shortcut_popup)
@@ -739,7 +695,6 @@ def show_shortcut_picker():
             scroll,
             text=sc,
             height=30,
-            # FIX #5: Style aktif sama persis dengan bahasa yang dipilih
             fg_color=C_BTN_SEL_FG if is_active else C_BTN,
             text_color=C_BTN_SEL_TXT if is_active else C_TEXT,
             hover_color="#dddddd" if is_active else C_BTN_HOVER,
@@ -764,7 +719,7 @@ def _close_shortcut_if_outside(event):
     global current_shortcut_popup
     if not current_shortcut_popup or not current_shortcut_popup.winfo_exists():
         return
-    # Jangan tutup jika klik ada di dalam popup atau di shortcut_btn
+    
     try:
         px = current_shortcut_popup.winfo_rootx()
         py = current_shortcut_popup.winfo_rooty()
@@ -773,7 +728,7 @@ def _close_shortcut_if_outside(event):
         ex, ey = event.x_root, event.y_root
         if px <= ex <= px + pw and py <= ey <= py + ph:
             return
-        # Juga jangan tutup kalau klik di shortcut_btn sendiri
+
         bx = shortcut_btn.winfo_rootx()
         by = shortcut_btn.winfo_rooty()
         bw = shortcut_btn.winfo_width()
@@ -901,7 +856,6 @@ lang_frame.pack(fill="both", expand=True,
                 padx=LANG_FRAME_PX, pady=(0, LANG_FRAME_PY_B))
 
 # Build language buttons
-# v1.4: corner_radius dikurangi (8→4) untuk kurangi biaya render pada 80+ tombol massal.
 for name in LANGUAGES:
     btn = ctk.CTkButton(
         lang_frame,
@@ -912,7 +866,7 @@ for name in LANGUAGES:
         hover_color=C_BTN_HOVER,
         border_color=C_BTN_BORDER,
         border_width=1,
-        corner_radius=4,            # v1.4: dikurangi dari 8 → 4 (lebih ringan)
+        corner_radius=4,          
         font=LANG_BTN_FONT,
         command=lambda n=name: select_language(n),
     )
@@ -1007,14 +961,13 @@ notif_label = ctk.CTkLabel(
 )
 notif_label.pack(padx=14, pady=6)
 
-# FIX #4: Bind klik di luar untuk menutup popup shortcut
 root.bind_all("<Button-1>", lambda e: (
     root.after(10, close_current_menu),
     root.after(10, lambda: _close_shortcut_if_outside(e))
 ))
 
 # =========================
-# INIT SETELAH WINDOW SIAP
+# INIT AFTER WINDOWS READY
 # =========================
 
 def _after_map():

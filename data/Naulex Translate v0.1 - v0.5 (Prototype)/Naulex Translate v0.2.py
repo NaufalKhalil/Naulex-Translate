@@ -111,10 +111,10 @@ C_ERROR         = "#ef4444"
 FAVORITES_FILE  = "favorites.json"
 CONFIG_FILE     = "naulex_config.json"
 STATS_FILE      = "naulex_stats.json"
-ICON_APP        = "icons/Naulex.ico"
-ICON_TRANSLATE  = "icons/translate_icon.png"
-ICON_SEARCH     = "icons/search_icon.png"
-ICON_TERMINAL   = "icons/terminal_icon.png"
+ICON_APP        = "assets/Naulex.ico"
+ICON_TRANSLATE  = "assets/translate_icon.png"
+ICON_SEARCH     = "assets/search_icon.png"
+ICON_TERMINAL   = "assets/terminal_icon.png"
 
 SHORTCUT_OPTIONS = [
     "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
@@ -229,7 +229,7 @@ selected_lang   = LANGUAGES.get(config.get("language", "English"), "en")
 selected_lang_name = config.get("language", "English")
 current_filter  = "all"
 current_menu    = None
-buttons         = {}          # name -> CTkButton
+buttons         = {}
 _resize_after   = [None]
 _last_col_count = [-1]
 current_shortcut = config.get("shortcut", "F2")
@@ -429,7 +429,7 @@ _hotkey_active = [True]
 
 def hotkey_loop():
     time.sleep(0.4)
-    log("[INFO] Naulex Translate v2.0")
+    log("[INFO] Naulex Translate v0.2")
     log("[INFO] Created by Naufal Khalil 🌍")
     log(f"[INFO] Shortcut active: {current_shortcut}")
     log("[INFO] Right-click a language to favorite it")
@@ -650,7 +650,7 @@ btn_fav = ctk.CTkButton(
 )
 btn_fav.pack(side="left", padx=(0, 8))
 
-# Search — same style as v1.0 using load_icon
+# Search
 search_frame = ctk.CTkFrame(topbar_frame, fg_color=C_BTN,
                              corner_radius=20, height=SEARCH_H)
 search_frame.pack(side="left", fill="x", expand=True)
@@ -799,7 +799,7 @@ notif_label = ctk.CTkLabel(
 notif_label.pack(padx=14, pady=6)
 
 # =========================
-# INIT SETELAH WINDOW SIAP
+# INIT AFTER WINDOWS READY
 # =========================
 
 def _after_map():
