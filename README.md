@@ -4,7 +4,7 @@
       <img src="./data/design/icon apps/Naulex.svg" width="120">
     </td>
     <td>
-      <h1>Naulex Translate v1.0</h1>
+      <h1>Naulex Translate</h1>
       <p>
         A modern desktop translator with a minimal dark UI, fast performance, and interactive features.
       </p>
