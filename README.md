@@ -214,28 +214,41 @@ Make your workflow faster and smarter:
 
 ---
 
-## 💬 Support
+## 👨‍💻 Developer
 
-If you like this project:
-
-- ⭐ Star the repository  
-- 🍴 Fork and contribute  
-- 🐞 Report bugs or suggest features  
-
-Your support helps this project grow 🚀  
+<div align="left">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/NaufalKhalil">
+          <img src="https://github.com/NaufalKhalil.png" width="80" style="border-radius:50%" alt="Naufal Khalil"><br>
+          <strong>Naufal Khalil ID</strong>
+        </a><br>
+        <sub>Creator & Developer</sub>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
 ## 📧 Contact
 
-If there is any confusion/bug/suggestion, dm me:
-- Instagram: https://www.instagram.com/khalil.naufal_/  
+If there is any confusion, bug report, or suggestion, feel free to contact me:
+
+* Instagram: https://www.instagram.com/khalil.naufal_/
 
 ---
 
-## 👨‍💻 Developer
+## 💬 Support
 
-Created by: **Naufal Khalil ID**
+If you like this project:
+
+* ⭐ Star the repository
+* 🍴 Fork and contribute
+* 🐞 Report bugs or suggest features
+
+Your support helps this project grow 🚀
 
 ---
 
