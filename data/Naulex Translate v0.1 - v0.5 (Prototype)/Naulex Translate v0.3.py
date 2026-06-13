@@ -1,3 +1,27 @@
+"""
+Naulex Translate Prototype v0.3
+
+=> Added :
+- Shortcut popup state management.
+- Auto-close shortcut popup.
+- Button state cache system.
+- Translation completion notification.
+
+=> Improved : 
+- Faster translation workflow.
+- More efficient statistics updates.
+- Better clipboard handling.
+- Reduced unnecessary UI refreshes.
+
+=> Fixed :
+- Google Translator import optimization.
+- Resize refresh spam issue.
+- Multiple shortcut popup bugs.
+- Button state synchronization issues.
+- Translation logging improvements.
+"""
+
+
 import subprocess
 import sys
 

@@ -1,3 +1,29 @@
+"""
+Naulex Translate Prototype v0.4
+
+=> Added :
+- Grid layout caching.
+- Button grid cache system.
+- Enhanced button state cache.
+
+=> Improved :
+- Language selection responsiveness.
+- Grid rendering performance.
+- Favorite language refresh speed.
+- Resize handling efficiency.
+
+=> Fixed :
+- Selected language visual state issues.
+- Button redraw problems.
+- Grid refresh inconsistencies.
+- Multiple UI synchronization bugs.
+
+=> Performance :
+- Reduced unnecessary widget updates.
+- Lower UI rendering overhead.
+"""
+
+
 import subprocess
 import sys
 

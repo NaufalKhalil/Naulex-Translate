@@ -1,3 +1,29 @@
+"""
+Naulex Translate Prototype v0.2
+
+=> Added :
+- Customizable translation shortcut.
+- Persistent language selection.
+- Translation statistics tracking.
+- Daily translation counter.
+- Total translation counter.
+- Language usage analytics.
+- Notification popup system.
+- Expanded language database.
+- Configuration storage (naulex_config.json).
+- Statistics storage (naulex_stats.json).
+
+=> Improved :
+- Cleaner package installation process.
+- Better language sorting logic.
+- Favorite languages now prioritized.
+
+=> Fixed :
+- Various UI inconsistencies.
+- Improved startup experience.
+"""
+
+
 import subprocess
 import sys
 

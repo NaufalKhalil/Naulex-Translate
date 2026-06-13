@@ -1,3 +1,24 @@
+"""
+Naulex Translate Prototype v0.1
+
+=> Added :
+- Auto translate selected text using Google Translate.
+- Translation triggered with F2 hotkey.
+- Dark-themed CustomTkinter interface.
+- Language selection panel.
+- Search language feature.
+- Favorite language system.
+- Terminal log panel.
+- Responsive language grid layout.
+- Persistent favorite language storage (favorites.json).
+- Automatic dependency installer.
+
+=> Notes :
+- Basic proof-of-concept release.
+- Fixed shortcut and language settings were not yet configurable.
+"""
+
+
 import subprocess
 import sys
 

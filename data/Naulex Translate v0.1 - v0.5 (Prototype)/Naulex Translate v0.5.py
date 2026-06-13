@@ -1,3 +1,29 @@
+"""
+Naulex Translate Prototype v0.5
+
+=> Added :
+- Terminal log memory management.
+- Automatic log trimming system.
+- Performance profiling tools.
+- Internal performance timer utilities.
+
+=> Improved :
+- Long-session stability.
+- Memory consumption during extended use.
+- Terminal rendering performance.
+- Translation logging efficiency.
+
+=> Fixed :
+- Log overflow issues.
+- Excessive terminal memory growth.
+- Minor performance bottlenecks.
+
+=> Performance :
+- Maximum log line protection (500 lines).
+- Automatic cleanup to maintain responsiveness.
+- Better overall application scalability.
+"""
+
 import subprocess
 import sys
 
