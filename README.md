@@ -222,7 +222,7 @@ Make your workflow faster and smarter:
       <td align="center">
         <a href="https://github.com/NaufalKhalil">
           <img src="https://github.com/NaufalKhalil.png" width="80" style="border-radius:50%" alt="Naufal Khalil"><br>
-          <strong>Naufal Khalil ID</strong>
+          <strong><h4>Naufal Khalil<h4></strong>
         </a><br>
         <sub>Creator & Developer</sub>
       </td>
