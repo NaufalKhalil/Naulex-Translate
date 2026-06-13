@@ -1,3 +1,31 @@
+"""
+Naulex Translate v1.0
+
+=> Added :
+- Standalone Windows .exe release.
+- Improved application startup.
+- Persistent user configuration.
+- Improved translation workflow.
+- Better language management.
+- Stable performance optimization.
+
+=> Improved :
+- Faster UI response.
+- Better clipboard handling.
+- More reliable shortcut system.
+- Improved logging system.
+- Reduced memory usage.
+
+=> Fixed :
+- Language selection refresh issues.
+- UI synchronization bugs.
+- Shortcut popup problems.
+- Clipboard timing errors.
+- Log overflow issues.
+- Minor stability bugs.
+"""
+
+
 
 import subprocess, sys, os, json
 
