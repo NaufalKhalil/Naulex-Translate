@@ -214,7 +214,7 @@ Make your workflow faster and smarter:
 
 ---
 
-## 👨‍💻 Developer
+## 👨‍💻 Developer/Contributor
 
 <div align="left">
   <table>
