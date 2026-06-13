@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td width="" align="left">
-      <img src="./data/design/icon apps/icon.svg" width="120">
+      <img src="./data/design/icon apps/Naulex.svg" width="120">
     </td>
     <td>
       <h1>Naulex Translate v1.0</h1>
